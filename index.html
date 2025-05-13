@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="./css/style.css" >
+    <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+</head>
+<body>
+    <main class="main">
+        <div class="sign">
+            <img src="./assets/images/illustration-sign-up-mobile.svg" alt="Sign Up" class="stay__img">
+            <div class="sign-container">
+                <h1 class="sign__title">Stay updated!</h1>
+                <p class="sign__text regular">Join 60,000+ product managers receiving monthly updates on:</p>
+                <ul class="sign__list">
+                    <li class="point">Product discovery and building what matters</li>
+                    <li class="point">Measuring to ensure updates are a success</li>
+                    <li class="point">And much more!</li>
+                </ul>
+                <form id="form" class="form" novalidate>
+                    <div>
+                        <div class="label-container">
+                            <label for="email" class="label-email text-small">Email address</label>
+                            <p class="text-small error">Valid emal required</p>
+                        </div>
+                        <input type="email" class="input-email" id="email" placeholder="email@company.com">
+                    </div>
+                    <input class="btn-email text-2" type="submit" value="Subscribe to monthly newsletter"></input>
+                </form>
+            </div>
+            
+        </div>
+        <div style="display: none;" class="success">
+            <div class="success-container">
+                <div class="success__texts">
+                    <img class="icon" src="./assets/images/icon-success.svg" alt="Success">
+                    <h1 class="success__title">Thanks for subscribing!</h1>
+                    <p class="regular success__text"> A confirmation email has been sent to <span class="text-2 show-email"></span>. 
+    Please open it and click the button inside to confirm your subscription.</p>
+                </div>
+                <input id="btn-dismiss" class="btn-email text-2 btn-dismiss" type="reset" value="Dismiss message"></input>
+            </div>
+        </div>
+    </main>
+    <script defer src="./main.js"></script>
+</body>
+</html>
